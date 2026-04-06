@@ -10,13 +10,10 @@ const Login: React.FC = () => {
           <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonButtons>
-                        <IonMenuButton></IonMenuButton>
-                    </IonButtons>
                     <IonTitle>Login</IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent fullscreen>\
+            <IonContent fullscreen>
 
                 <IonButton expand="full" onClick={() => doLogin()}>
                     Login
