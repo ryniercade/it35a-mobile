@@ -1,22 +1,21 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 
-const Template: React.FC = () => {
-    return (
-          <IonPage>
-            <IonHeader>
-                <IonToolbar>
+import { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent } from '@ionic/react';
+
+const Template: React.FC = () =>{
+      return(
+           <IonPage>
+              <IonHeader>
+                  <IonToolbar>
                     <IonButtons>
-                        <IonMenuButton></IonMenuButton>
-                    </IonButtons>
-                    <IonTitle>Template</IonTitle>
+                    <IonMenuButton></IonMenuButton>
+                  </IonButtons>
+                  <IonTitle>Template</IonTitle>
                 </IonToolbar>
-            </IonHeader>
-            <IonContent fullscreen>
+              </IonHeader>
+              <IonContent fullscreen>
+              </IonContent>
+              </IonPage>
+      );
 
-            </IonContent>
-          </IonPage>
-    );
-    
-}
-
+};
 export default Template;
