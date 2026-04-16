@@ -1,7 +1,16 @@
 
-import { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent } from '@ionic/react';
+import { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonList, IonListHeader, IonLabel, IonItem } from '@ionic/react';
 
 const Feed: React.FC = () =>{
+
+   const labels = [
+        {name:'Video Games'},
+        {name:'Pokémon Yellow'},
+        {name:'Mega Man X'},
+        {name:'Pac-Man'},
+        {name:'Super Mario World'},
+   ]
+
       return(
            <IonPage>
               <IonHeader>
@@ -13,7 +22,18 @@ const Feed: React.FC = () =>{
                 </IonToolbar>
               </IonHeader>
                <IonContent className="ion-padding">
-                <h1>Feed</h1>
+                  {/**/}
+           {labels.map((item, index) =>(
+
+             <IonList>
+              <IonListHeader>
+                 <IonLabel>{item.name}</IonLabel>
+              </IonListHeader>
+              
+            </IonList>
+                     
+              ))}
+     
               </IonContent>
               </IonPage>
       );
