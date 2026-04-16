@@ -36,7 +36,7 @@ const Search: React.FC = () =>{
                      <IonTitle>Search</IonTitle>
                   </IonButtons>
                 </IonToolbar>
-              <IonSearchbar color="success" placeholder="Success" debounce={1000} onIonInput={(event) => handleInput(event)}></IonSearchbar>
+              <IonSearchbar color="danger" placeholder="Danger" debounce={1000} onIonInput={(event) => handleInput(event)}></IonSearchbar>
               </IonHeader>
                <IonContent className="ion-padding">
                 {/**/}
